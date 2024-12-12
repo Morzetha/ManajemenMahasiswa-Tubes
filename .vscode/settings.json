@@ -1,0 +1,15 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/kireins/javafx-sdk-23.0.1/lib/javafx.base.jar",
+        "/Users/kireins/javafx-sdk-23.0.1/lib/javafx.controls.jar",
+        "/Users/kireins/javafx-sdk-23.0.1/lib/javafx.web.jar",
+        "/Users/kireins/javafx-sdk-23.0.1/lib/javafx.swing.jar",
+        "/Users/kireins/javafx-sdk-23.0.1/lib/javafx.graphics.jar",
+        "/Users/kireins/javafx-sdk-23.0.1/lib/javafx.media.jar",
+        "/Users/kireins/javafx-sdk-23.0.1/lib/javafx-swt.jar",
+        "/Users/kireins/javafx-sdk-23.0.1/lib/javafx.fxml.jar"
+    ]
+}
