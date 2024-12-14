@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 public class App extends Application {
 
-    private static final String DB_URL = "jdbc:mysql://localhost:80/student";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/Student";
     private static final String DB_USER = "root";
     private static final String DB_PASS = "";
 

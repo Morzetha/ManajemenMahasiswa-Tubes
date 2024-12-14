@@ -1,6 +1,8 @@
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
@@ -30,6 +32,8 @@ public class DashboardController {
 
     @FXML
     private CheckBox verifikasiData;
+    
+    
 
     private ObservableList<Student> studentList = FXCollections.observableArrayList();
 

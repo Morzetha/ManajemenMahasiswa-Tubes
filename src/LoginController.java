@@ -27,7 +27,7 @@ public class LoginController {
         String username = textFieldUsername.getText();
         String password = textFieldPassword.getText();
 
-        Parent dashboardParent = FXMLLoader.load(getClass().getResource("DataPage.fxml"));
+        Parent dashboardParent = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
         Scene dashboardScene = new Scene(dashboardParent);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
