@@ -31,10 +31,9 @@ public class LoginController {
         Scene dashboardScene = new Scene(dashboardParent);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        if (username.equals("Mahasiswa2023") && password.equals("MHS2023")) {
+        if (username.equals("kelompok2") && password.equals("password")) {
             stage.setScene(dashboardScene);
-            stage.show();
-            
+            stage.show();     
         }else {
             Alert alert = new Alert(AlertType.ERROR);
             alert.setTitle("Username atau password tidak valid!");

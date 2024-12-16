@@ -12,14 +12,14 @@
 <VBox spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
       fx:controller="DashboardController">
 
-    <TableView fx:id="tableDataMahasiswa" prefHeight="300" prefWidth="600">
+    <TableView fx:id="tableDataMahasiswa" prefHeight="300" prefWidth="600" onMouseClicked="#handleTableDoubleClick">
         <columns>
-            <TableColumn text="NIM" />
-            <TableColumn text="Nama" />
-            <TableColumn text="Kelas" />
-            <TableColumn text="Angkatan" />
-            <TableColumn text="Jurusan" />
-            <TableColumn text="Gender" />
+            <TableColumn fx:id="nimColumn" text="NIM" />
+            <TableColumn fx:id="namaColumn" text="Nama" />
+            <TableColumn fx:id="kelasColumn" text="Kelas" />
+            <TableColumn fx:id="angkatanColumn" text="Angkatan" />
+            <TableColumn fx:id="jurusanColumn" text="Jurusan" />
+            <TableColumn fx:id="genderColumn" text="Gender" />
         </columns>
     </TableView>
 
@@ -32,17 +32,17 @@
         </VBox>
         <VBox>
             <ChoiceBox fx:id="cbJurusan" />
-            <RadioButton fx:id="lakilaki" text="Laki-Laki" />
-            <RadioButton fx:id="perempuan" text="Perempuan" />
+            <RadioButton fx:id="lakilaki" text="Laki-Laki" onAction="#handleGenderSelection"/>
+            <RadioButton fx:id="perempuan" text="Perempuan" onAction="#handleGenderSelection"/>
             <CheckBox fx:id="verifikasiData" text="Verifikasi Data" />
         </VBox>
     </HBox>
 
     <HBox spacing="10">
-        <Button text="Add Data" onAction="#addData" />
-        <Button text="Edit Data" onAction="#editData" />
-        <Button text="Delete Data" onAction="#deleteData" />
-        <Button text="Clear Fields" onAction="#clearFields" />
+        <Button text="Add Data" onAction="#addDataMhs" />
+        <Button text="Edit Data" onAction="#editDataMhs" />
+        <Button text="Delete Data" onAction="#deleteDataMhs" />
+        <Button text="Clear Fields" onAction="#clearDataMhs" />
     </HBox>
 
 </VBox>
